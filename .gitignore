@@ -1,0 +1,36 @@
+# --- R Specific ---
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.Rprofile
+
+# --- Renviron & Credentials (Crucial for Security) ---
+.Renviron
+.secrets/
+*.json
+*.pem
+
+# --- Data & Cache ---
+# Ignore data files, especially large ones
+data/
+raw_data/
+*.csv
+*.xlsx
+*.rds
+*.Rds
+*.sqlite
+
+# --- Dependency Management ---
+# If using renv (highly recommended)
+renv/library/
+renv/staging/
+.Rprofile # Often managed by renv
+
+# --- Shiny/RStudio specific ---
+rsconnect/
+.Rbuildignore
+
+# --- System Files ---
+.DS_Store
+Thumbs.db
